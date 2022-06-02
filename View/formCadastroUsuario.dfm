@@ -1,0 +1,186 @@
+object frmCadastroUsuario: TfrmCadastroUsuario
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro Usuario'
+  ClientHeight = 215
+  ClientWidth = 554
+  Color = clGradientActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 554
+    Height = 75
+    Align = alTop
+    BevelOuter = bvNone
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 0
+    object btnNovo: TSpeedButton
+      Left = 11
+      Top = 5
+      Width = 75
+      Height = 68
+      Caption = 'Gravar'
+      ImageIndex = 0
+      Images = dm.ImageList1
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 1116996
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Layout = blGlyphTop
+      NumGlyphs = 4
+      ParentFont = False
+      Transparent = False
+      OnClick = btnNovoClick
+    end
+    object btnExcluir: TSpeedButton
+      Left = 90
+      Top = 5
+      Width = 75
+      Height = 68
+      HelpType = htKeyword
+      Caption = 'Excluir'
+      ImageIndex = 2
+      Images = dm.ImageList1
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 1116996
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Layout = blGlyphTop
+      ParentFont = False
+      Transparent = False
+      OnClick = btnExcluirClick
+    end
+    object btnFechar: TSpeedButton
+      Left = 471
+      Top = 5
+      Width = 75
+      Height = 68
+      Caption = 'Fechar'
+      ImageIndex = 5
+      Images = dm.ImageList1
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 1116996
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Layout = blGlyphTop
+      ParentFont = False
+      OnClick = btnFecharClick
+    end
+    object btnCancelar: TSpeedButton
+      Left = 171
+      Top = 5
+      Width = 75
+      Height = 68
+      HelpType = htKeyword
+      Caption = 'Cancelar'
+      ImageIndex = 6
+      Images = dm.ImageList1
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 1116996
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Layout = blGlyphTop
+      ParentFont = False
+      Transparent = False
+      OnClick = btnCancelarClick
+    end
+    object btnPesquisar: TSpeedButton
+      Left = 252
+      Top = 5
+      Width = 75
+      Height = 68
+      HelpType = htKeyword
+      Caption = 'Pesquisar'
+      ImageIndex = 7
+      Images = dm.ImageList1
+      Flat = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 1116996
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      Layout = blGlyphTop
+      ParentFont = False
+      Transparent = False
+      OnClick = btnPesquisarClick
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 88
+    Width = 535
+    Height = 109
+    Caption = 'Cadastro de Usu'#225'rio'
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 16
+      Top = 37
+      Width = 33
+      Height = 13
+      Caption = 'C'#243'digo'
+    end
+    object Label2: TLabel
+      Left = 119
+      Top = 37
+      Width = 81
+      Height = 13
+      Caption = 'Nome de Usuario'
+    end
+    object Label6: TLabel
+      Left = 328
+      Top = 37
+      Width = 30
+      Height = 13
+      Caption = 'Senha'
+    end
+    object edtCodigo: TEdit
+      Left = 16
+      Top = 53
+      Width = 97
+      Height = 21
+      TabStop = False
+      Color = clSilver
+      Enabled = False
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtNomeUsuario: TEdit
+      Left = 119
+      Top = 53
+      Width = 203
+      Height = 21
+      TabOrder = 1
+    end
+    object edtSenha: TEdit
+      Left = 328
+      Top = 53
+      Width = 193
+      Height = 21
+      PasswordChar = '*'
+      TabOrder = 2
+      TextHint = '**********'
+    end
+  end
+end
